@@ -1,0 +1,142 @@
+html, body { 
+	height: 100%; 
+}
+
+body{
+	font-family: Helvetica, Arial;
+	font-size: 27px;
+	margin: 0 auto;
+	padding: 40px 10px;
+	background-color: #0a0a0a;
+	color: #fff;
+	font-weight: 300;
+}
+
+.align-center {
+    text-align: center;
+	color: #fff;
+}
+
+.transmitterr{
+	opacity: 0;
+	height: 0;
+	position:fixed;
+    top:5px;
+    right:0;
+    left:0;
+}
+
+.display{
+	display: block; 
+}
+
+.remove{ 
+	display:none; 
+}
+
+.logo{
+  width: 100%;
+}
+
+.logo img {
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+.description {
+	margin: 20px auto 10px;
+	text-align: center;
+}
+
+button{
+	background: #4a6566;
+	border: 0;
+	color: #fff;
+	font-size: 20px;
+	padding: 1em 2em;
+	cursor: pointer;
+	margin: 0 auto 25px;
+	display: block;
+	text-align: center;
+	border-radius: 6px;
+	font-weight: bold;
+	max-width: 200px;
+}
+
+#game{
+	display:none;
+}
+
+#clock{
+  text-align: right;
+  font-family: 'VT323', monospace;
+}
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 1000px;
+}
+
+.hud{
+	position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    height:50px;
+    background: #4a6566;
+    z-index: 2;
+}
+
+#timer{
+	
+	text-align: right;
+	margin-right: 20px;
+	font-family: 'VT323', monospace;
+}
+
+#teaser{
+	margin-left: 20px; 
+}
+
+#gameOver {
+		display: none;
+		z-index: 100;
+		width: 100%;
+		height: auto;
+		text-align: center;
+		Position: absolute;
+		padding: 0;
+		margin: 0 auto;
+		top:30% ;
+		left:0 ;
+}
+
+#gameOver div{
+		background-color: #323a3a; ;
+		padding: 3px;
+		max-width: 400px;
+		margin: 10px auto 0;
+		box-shadow: 0 0 1em #222;
+		border-radius: 5px;
+		text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+.logo {
+	-ms-transform: scale(0.1,0.1); /* IE 9 */
+	-webkit-transform: scale(0.1,0.1); /* Safari */
+	transform: scale(0.1, 0.1);
+	transition: all 3s;
+}
+.transmitterr{	
+  opacity: 1;
+  height: 100%;
+}
+}
+
+
+

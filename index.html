@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
+		<title>JUD</title>
+
+		<meta name="description" content="Global Jam Game">
+		<meta name="author" content="Ghadeer Alkhathlan">
+
+			<!-- Favicons 
+			<link rel="shortcut icon" href="favicon.ico">
+			-->
+
+			<!-- CSS-->
+
+			<!-- Reset -->
+			<link rel="stylesheet" href="css/normalize.css" >
+		
+		    <!-- FontAwesome -->
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+
+			<!-- Bootstrap -->
+			<link rel="stylesheet" href="css/bootstrap.min.css">
+
+			<!-- Main styles-->
+			<link rel="stylesheet" href="css/style.css">
+
+
+	</head>
+	
+	<body>	
+		
+		<div class="container" id="mainMenu">
+			<div class= "row" >
+				<div class="align-center transmitterr">
+					<i class="fa fa-wifi"></i>
+				</div>
+			</div>
+			
+			<div class= "row" >
+				 <h1 class="logo"><img src="img/jud.svg" /></h1>
+			</div>
+			
+			<div class= "row" >
+				<!--<p class="description"> can you ? </p> -->
+				<button id="tryGame" style="margin-top: 30px;"> try now ! </button>
+			</div>
+		</div>
+	
+
+		<div class="container" id="game">
+			<div class="hud">
+				<div class="row" style="padding: 5px">
+					<div class="col-sm-8">
+					  <p id="teaser">comments  </p>
+					</div>
+				
+					<div class="col-sm-4"> 
+						<p id='timer'> 20 </p>
+				    </div>
+				</div>
+			</div>
+			
+			<div class="row">
+			  <canvas width=1000 height=650 id="canvas"></canvas>
+			</div>
+
+			<div id="gameOver">
+				<div>
+					<h2 > You Lost !!! </h2>
+					<button id="restart"> Try Again </button>
+				</div>	
+			</div>
+
+		</div>
+		<script type="text/javascript" src="jquery.2.1.1.min.js"></script>
+		<script src="game.js"></script>
+	</body>
+</html>
